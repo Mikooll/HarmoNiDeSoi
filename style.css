@@ -9,7 +9,7 @@
   --on-background-opacity: rgba(2, 167, 157, 0.5);
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(238, 248, 255);
-  --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+  --box-shadow: 0 0.313em 1.250em 0.063em rgba(0, 0, 0, 0.5);
 }
 
 html {
@@ -35,7 +35,7 @@ section {
 
 h1 {
   font-family: Kaushan Script, sans-serif;
-  font-size: 100px;
+  font-size: 6.250em;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   color: var(--primary-color);
@@ -44,7 +44,7 @@ h1 {
 h2 {
   font-family: Oswald, sans-serif;
   color: var(--on-background-alt);
-  font-size: 32px;
+  font-size: 2em;
   font-weight: normal;
 }
 
@@ -55,10 +55,10 @@ nav {
   text-align: center;
   z-index: 10;
   position: fixed;
-  font-size: 24px;
+  font-size: 1.5em;
   font-family: Oswald, sans-serif;
-  letter-spacing: 3px;
-  padding: 25px;
+  letter-spacing: 0.188em;
+  padding: 1.563em;
   width: 100vw;
   background: rgb(255 255 255 / 50%);
 }
@@ -70,26 +70,26 @@ nav {
 .nav--icon {
   text-align: center;
   margin-right: 1rem;
-  width: 7%;
+  width: 8%;
 }
 
 .nav--icon .fab {
-  font-size: 34px;
-  margin-right: 10px;
+  font-size: 2.125rem;
+  margin-right: 0.625em;
 }
 
 a {
-  margin-right: 25px;
+  margin-right: 1.563em;
   color: var(--primary-color);
   text-decoration: none;
-  border-bottom: 3px solid transparent;
+  border-bottom: 0.188em solid transparent;
   font-weight: bold;
 }
 
 a:hover,
 a:focus {
   color: var(--on-background);
-  border-bottom: 3px solid;
+  border-bottom: 0.188em solid;
 }
 
 /* Home Section */
@@ -100,7 +100,7 @@ a:focus {
 
 .home--logo {
   margin-top: 3rem;
-  border-radius: 30px;
+  border-radius: 1.875em;
 }
 
 .title-group {
@@ -127,15 +127,14 @@ a:focus {
 }
 
 .about--title {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 0.313em;
 }
 
 .image-container {
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  padding: 10px 20px;
-  margin-right: 25px;
+  border-radius: 0.625em;
+  padding: 0.625rem 1.250em;
+  margin-right: 1.563em;
   margin-left: 2rem;
   width: auto;
   background: var(--background);
@@ -145,8 +144,8 @@ a:focus {
 
 #about img {
   margin-top: 3em;
-  width: 300px;
-  border-radius: 180px;
+  width: 18.750em;
+  border-radius: 11.250em;
 }
 
 #about p {
@@ -155,17 +154,17 @@ a:focus {
 
 /* Philo Section */
 .buttons {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  margin-top: 0.938em;
+  margin-bottom: 0.625em;
 }
 
 button {
-  min-width: 100px;
-  height: 40px;
-  border-radius: 50px;
-  margin-right: 10px;
+  min-width: 6.250em;
+  height: 2.500em;
+  border-radius: 3.125em;
+  margin-right: 0.625em;
   border: 2px solid var(--primary-color);
-  font-size: 15px;
+  font-size: 0.938em;
   outline: none;
 }
 
@@ -211,19 +210,19 @@ button:hover:not(.outline) {
   background: var(--on-background-alt);
 
   color: var(--on-primary);
-  border-radius: 10px;
+  border-radius: 0.625em;
   padding: 30px;
   margin-top: 2rem;
 }
 
 p {
   margin: 0;
-  line-height: 25px;
+  line-height: 1.563em;
 }
 
 #philosophie img {
-  width: 500px;
-  height: 300px;
+  width: 31.250em;
+  height: 18.750em;
 }
 
 .philosophie--description {
@@ -233,16 +232,16 @@ p {
 }
 
 .philosophie--description .primary {
-  width: 300px;
+  width: 18.750em;
 }
 
 .philosophie--description .outline {
-  width: 350px;
+  width: 21.875em;
   color: black;
 }
 
 .philosophie--description .secondary {
-  width: 500px;
+  width: 31.250em;
 }
 
 .philo-paragraph {
@@ -261,8 +260,8 @@ p {
 
 .flip-box {
   background-color: transparent;
-  width: 400px;
-  height: 500px;
+  width: 25em;
+  height: 31.250em;
 }
 
 .shop-container {
@@ -271,8 +270,8 @@ p {
 }
 
 .shop--image-container h2 {
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 0.313em;
+  margin-bottom: 1.875em;
   text-align: center;
   border: 1px solid #f1f1f1;
   perspective: 1000px;
@@ -324,7 +323,7 @@ p {
   background-color: var(--primary-color);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 0.938em;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -336,8 +335,8 @@ p {
 
 /* Contact Section */
 .fab {
-  font-size: 100px;
-  margin-right: 50px;
+  font-size: 6.250em;
+  margin-right: 3.125em;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -345,13 +344,13 @@ p {
 
 
 .fas {
-  font-size: 30px;
-  margin-right: 5px;
+  font-size: 1.875em;
+  margin-right: 0.313em;
 }
 
 .social-icons .fas {
-  font-size: 80px;
-  margin-right: 50px;
+  font-size: 5em;
+  margin-right: 3.125em;
   cursor: pointer;
   color: var(--primary-color);
 }
@@ -365,18 +364,18 @@ p {
 .footer {
   background: var(--on-background);
   color: white;
-  height: 74vh;
+  height: 64vh;
   position: relative;
 }
 
 .footer .footer-content {
-  height: 350px;
+  height: 21.875em;
   display: flex;
 }
 
 .footer .footer-content .footer-section {
   flex: 1;
-  padding: 25px;
+  padding: 1.563em;
 }
 
 .links {
@@ -403,17 +402,17 @@ ul.links--list {
 }
 
 .footer .footer-bottom {
-  height: 25px;
+  height: 1.563em;
   width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0px;
   left: 0px;
-  padding-top: 20px;
+  padding-top: 1.250em;
 }
 
 .about h1 {
-  font-size: 50px;
+  font-size: 3.125em;
   margin-top: 0px;
   margin-bottom: 3rem;
   color: white;
@@ -421,8 +420,8 @@ ul.links--list {
 
 .links h2,
 .contact-form h2 {
-  margin-bottom: 8px;
-  margin-top: 8px;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   color: white;
   font-weight: 800;
 }
@@ -445,7 +444,7 @@ ul.links--list {
 
 .about .fa-facebook,
 .about .fa-instagram {
-  font-size: 40px;
+  font-size: 2.500em;
   color: white;
   margin-right: 0px;
 }
@@ -468,11 +467,11 @@ form {
 .contact-input {
   background: white;
   color: gray;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
   line-height: 1.5rem;
   padding: .7rem 1.2rem;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.625em;
   resize: none;
 }
 
@@ -500,7 +499,7 @@ form {
   background: var(--primary-color);
   color: white;
   padding: 1rem;
-  font-size:13px;
+  font-size: 0.813em;
   border-radius: 100%;
   cursor:pointer;
   font-weight: 700;
