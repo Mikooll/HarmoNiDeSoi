@@ -431,7 +431,7 @@ ul.links--list {
   font-size: 1.4rem;
 }
 
-a[href^=tel], a[href^=tel]:hover{
+a[href^=tel]{
   color: #fff;
   text-decoration: none;
 }
