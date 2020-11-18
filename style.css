@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   color: var(--on-background);
-  font-family: sans-serif;
+  font-family: Times, sans-serif;
   background-color: var(--background);
 
 }
@@ -499,10 +499,15 @@ form {
   background: var(--primary-color);
   color: white;
   padding: 1rem;
-  font-size: 0.813em;
-  border-radius: 100%;
+  font-size: 0.625em;
+  border-radius: 0.625em;
   cursor:pointer;
   font-weight: 700;
+  margin-left: 20rem;
+}
+
+.reduce{
+  margin-top: 2rem;
 }
 
 .footer-desc{
