@@ -361,19 +361,19 @@ p {
 }
 
 /* Footer */
-.footer {
+#contact {
   background: var(--on-background);
   color: white;
   height: 64vh;
   position: relative;
 }
 
-.footer .footer-content {
+#contact .footer-content {
   height: 21.875em;
   display: flex;
 }
 
-.footer .footer-content .footer-section {
+#contact .footer-content .footer-section {
   flex: 1;
   padding: 1.563em;
 }
@@ -509,3 +509,27 @@ form {
   font-style: italic;
 }
 
+
+@media (min-width: 768px){
+  #contact {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1024px){
+  #contact {
+    height: 70vh;
+  }
+}
+
+@media (min-width: 1440px){
+  #contact {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 767px){
+  #contact {
+    height: 30vh;
+  }
+}
