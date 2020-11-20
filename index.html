@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device, scale=1">
     <link rel="icon" type="image/png" href="assets/img/Logo Figutratif.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -313,7 +313,7 @@
         </p>
     </section>
 
-    <!-- Shop Section -->
+    <!-- Stages Section -->
     <section id="stage">
         <h1>Stage et planning</h1>
         <div class="flip-box">
@@ -368,8 +368,8 @@
                     <br>
                     <div class="ul--list">
                         <ul class="links--list">
-                            <a href=".title-group">
-                                <li>Groupe</li>
+                            <a href="#home">
+                                <li>Présentation</li>
                             </a>
                             <a href="#about">
                                 <li>L'équipe</li>
@@ -379,7 +379,7 @@
                             </a>
                         </ul>
                         <ul class="links--list">
-                            <a href="#satges">
+                            <a href="#stage">
                                 <li>Stage</li>
                             </a>
                             <a href="boutique.html">
@@ -390,17 +390,24 @@
                             </a>
                         </ul>
                     </div>
-                    <div class="footer-section links"><h2>Ils nous font confiance</h2></div>
+                    <div class="footer-section links">
+                        <h2>Ils nous font confiance</h2>
+                    </div>
                 </div>
                 <div class="footer-section contact-form">
                     <h2>Nous contacter</h2>
                     <br>
                     <form class="form-input" action="index.html" method="POST" enctype="text/plain">
-                        <input class="contact-input" type="nom" name="nom" id="name" placeholder="Nom et prénom">
-                        <input class="contact-input" type="ville" name="ville" id="ville" placeholder="Ville">
-                        <input class="contact-input" type="email" name="email" id="email" placeholder="Email">
+                        <p class="indications">* Ces informations sont requises</p>
+                        <input class="contact-input" type="nom" name="nom" id="name" placeholder="Nom et prénom*">
+                        <p class="comment-error">Message d'erreur</p>
+                        <input class="contact-input" type="ville" name="ville" id="ville" placeholder="Ville*">
+                        <p class="comment-error">Message d'erreur</p>
+                        <input class="contact-input" type="email" name="email" id="email" placeholder="Email*">
+                        <p class="comment-error">Message d'erreur</p>
                         <textarea class="contact-input" name="message" id="message"
-                            placeholder="Votre message"></textarea>
+                            placeholder="Votre message*"></textarea>
+                        <p class="comment-error">Message d'erreur</p>
                         <button type="submit" style="cursor: pointer;" class="submit-button">
                             <i class="fas fa-envelope"></i>
                             Envoyer

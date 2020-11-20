@@ -152,6 +152,26 @@ a:focus {
   color: var(--on-background-alt);
 }
 
+.complete{
+  display:none;
+}
+
+.more,
+.reduce {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  font-size: 1em;
+  border-radius: 0.625em;
+  cursor:pointer;
+  font-weight: 700;
+  margin-left: 20rem;
+}
+
+.reduce{
+  margin-top: 2rem;
+}
+
 /* Philo Section */
 .buttons {
   margin-top: 0.938em;
@@ -267,6 +287,7 @@ p {
 .shop-container {
   text-align: center;
   width: 100%;
+  margin-top: 10rem;
 }
 
 .shop--image-container h2 {
@@ -460,13 +481,19 @@ a[href^=tel]{
   transition: all 1.3s;
 }
 
-.links--list li:hover{
+.links--list li:hover {
   color: black;
 }
 
 form {
   display: flex;
   flex-direction: column;
+}
+
+.indications {
+  color: darkred;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .contact-input {
@@ -480,9 +507,23 @@ form {
   resize: none;
 }
 
+.comment-error {
+  font-style: italic;
+  font-size: 1.125em;
+  color: #693c3c;
+  height: 1.563em;
+  margin-bottom: 1.5rem;
+}
+
+.thank-you {
+  margin-top: 1em;
+  font-weight: 700;
+  font-size: 1.125em;
+}
 
 .form-input button {
   width: 50%;
+  transition: all 0.3s ease-in 0s;
 }
 
 .form-input button:hover {
@@ -495,26 +536,8 @@ form {
   color: var(--primary-color);
 }
 
-.complete{
-  display:none;
-}
-
-.more,
-.reduce {
-  background: var(--primary-color);
-  color: white;
-  padding: 1rem;
-  font-size: 1em;
-  border-radius: 0.625em;
-  cursor:pointer;
-  font-weight: 700;
-  margin-left: 20rem;
-}
-
-.reduce{
-  margin-top: 2rem;
-}
-
 .footer-desc{
   font-style: italic;
 }
+
+
