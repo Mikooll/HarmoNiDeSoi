@@ -505,13 +505,14 @@ form {
   border: none;
   border-radius: 0.625em;
   resize: none;
+  width: -webkit-fill-available;
 }
 
 .comment-error {
   font-style: italic;
   font-size: 1.125em;
   color: #693c3c;
-  height: 1.563em;
+  height: 0.563em;
   margin-bottom: 1.5rem;
 }
 

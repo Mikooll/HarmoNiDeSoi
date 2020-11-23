@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>HarmoNideSoi</title>
-    <meta name="viewport" content="width=device, scale=1">
     <link rel="icon" type="image/png" href="assets/img/Logo Figutratif.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -397,22 +396,20 @@
                 <div class="footer-section contact-form">
                     <h2>Nous contacter</h2>
                     <br>
-                    <form class="form-input" action="index.html" method="POST" enctype="text/plain">
+                    <form id="contact-form" class="form-input" action="" method="post" enctype="text/plain">
                         <p class="indications">* Ces informations sont requises</p>
-                        <input class="contact-input" type="nom" name="nom" id="name" placeholder="Nom et prénom*">
-                        <p class="comment-error">Message d'erreur</p>
-                        <input class="contact-input" type="ville" name="ville" id="ville" placeholder="Ville*">
-                        <p class="comment-error">Message d'erreur</p>
-                        <input class="contact-input" type="email" name="email" id="email" placeholder="Email*">
-                        <p class="comment-error">Message d'erreur</p>
-                        <textarea class="contact-input" name="message" id="message"
-                            placeholder="Votre message*"></textarea>
-                        <p class="comment-error">Message d'erreur</p>
+                        <input class="contact-input" type="text" name="name" id="name"  placeholder="Nom et prénom*" value="">
+                        <p class="comment-error"></p>
+                        <input class="contact-input" type="text" name="city" id="city"  placeholder="Ville*" value="">
+                        <p class="comment-error"></p>
+                        <input class="contact-input" type="email" name="email" id="email"  placeholder="Email*" value="">
+                        <p class="comment-error"></p>
+                        <textarea class="contact-input" name="message" id="message" placeholder="Votre message*"></textarea>
+                        <p class="comment-error"></p>
                         <button type="submit" style="cursor: pointer;" class="submit-button">
                             <i class="fas fa-envelope"></i>
                             Envoyer
                         </button>
-                        <p class="thank-you">Votre message a bien été envoyé. Merci de m'avoir contacté</p>
                     </form>
                 </div>
             </div>
@@ -424,7 +421,7 @@
         <!-- END OF FOOTER -->
     </footer>
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
