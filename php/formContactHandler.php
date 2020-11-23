@@ -1,6 +1,8 @@
 <?php 
     $array = array("name" => "", "city" => "", "email" => "", "message" => "", "nameError" => "", "cityError" => "", "emailError" => "", "messageError" => "", "isSuccess" => "false");
 
+    $sendEmailTo = "wawamika@gmail.com";
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['name'])) {
             $array["name"] = verifyInput($_POST['name']);
@@ -46,9 +48,9 @@
 
 
         if($array["isSuccess"]) {
-            $emailTo = "wawamika@gmail.com";
+            
             $headers = "From: {$array['name']} <{$array['email']}>\r\nReply-To: {$array['email']}";
-            mail($emailTo, "Un message de votre site", $emailText, $headers);
+            mail($sendEmailTo, "Un message de votre site", $emailText, $headers);
         }
 
         echo json_encode($array);

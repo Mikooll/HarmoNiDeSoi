@@ -7,7 +7,7 @@ $(function() {
 
         $.ajax({
             type: 'POST',
-            url: 'php/contact.php',
+            url: '../php/formContactHandler.php',
             data: postData,
             dataType: 'json',
             success: function(result){
