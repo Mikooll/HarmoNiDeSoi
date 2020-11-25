@@ -1,7 +1,7 @@
 <?php 
     $array = array("name" => "", "city" => "", "email" => "", "message" => "", "nameError" => "", "cityError" => "", "emailError" => "", "messageError" => "", "isSuccess" => "false");
 
-    $sendEmailTo = "wawamika@gmail.com";
+    $sendEmailTo = "harmonidesoi@gmail.com";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST['name'])) {
@@ -50,7 +50,7 @@
         if($array["isSuccess"]) {
             
             $headers = "From: {$array['name']} <{$array['email']}>\r\nReply-To: {$array['email']}";
-            mail($sendEmailTo, "Un message de votre site", $emailText, $headers);
+            mail($sendEmailTo, "Demande de prospect Harmonidesoi", $emailText, $headers);
         }
 
         echo json_encode($array);

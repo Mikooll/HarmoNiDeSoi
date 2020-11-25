@@ -78,6 +78,13 @@ nav {
   margin-right: 0.625em;
 }
 
+.nav--icon .fab:hover,
+.nav--icon .fab:focus {
+  color: var(--on-background);
+}
+
+
+
 a {
   margin-right: 1.563em;
   color: var(--primary-color);
@@ -90,6 +97,12 @@ a:hover,
 a:focus {
   color: var(--on-background);
   border-bottom: 0.188em solid;
+}
+
+
+.nav--icon a:hover,
+.nav--icon a:hover{
+  border: none;
 }
 
 /* Home Section */
@@ -111,6 +124,7 @@ a:focus {
   text-align: center;
   margin: 2em;
   margin-top: 1rem;
+  font-size: 1.5rem
 }
 
 .home--important {
@@ -218,6 +232,11 @@ button:hover:not(.outline) {
   color: black;
 }
 
+.philosophie--description .outline {
+  width: 21.875em;
+  color: black;
+}
+
 .outline:hover {
   background: var(--primary-color);
   color: var(--on-primary);
@@ -251,18 +270,6 @@ p {
   max-width: 100%;
 }
 
-.philosophie--description .primary {
-  width: 18.750em;
-}
-
-.philosophie--description .outline {
-  width: 21.875em;
-  color: black;
-}
-
-.philosophie--description .secondary {
-  width: 31.250em;
-}
 
 .philo-paragraph {
   width: 60%;
@@ -280,8 +287,8 @@ p {
 
 .flip-box {
   background-color: transparent;
-  width: 25em;
-  height: 31.250em;
+  width: 36em;
+  height: 40rem;
 }
 
 .shop-container {
@@ -337,6 +344,12 @@ p {
   margin: 0 auto;
 }
 
+.img-flip-stage {
+  text-align: center;
+  width: 36em;
+  height: 41em;
+}
+
 .price {
   border: 2px solid white;
   text-align: center;
@@ -362,8 +375,6 @@ p {
   color: var(--primary-color);
 }
 
-
-
 .fas {
   font-size: 1.875em;
   margin-right: 0.313em;
@@ -387,6 +398,7 @@ p {
   color: white;
   height: 50em;
   position: relative;
+  margin-top: 10rem;
 }
 
 .footer .footer-content {
@@ -491,9 +503,10 @@ form {
 }
 
 .indications {
-  color: darkred;
+  color: white;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  font-style: italic;
 }
 
 .contact-input {
@@ -506,6 +519,7 @@ form {
   border-radius: 0.625em;
   resize: none;
   width: -webkit-fill-available;
+  font-family: 'Oswald';
 }
 
 .comment-error {
@@ -541,4 +555,7 @@ form {
   font-style: italic;
 }
 
+textarea {
+  font-family: 'Times New Roman', Times, serif;
+}
 
