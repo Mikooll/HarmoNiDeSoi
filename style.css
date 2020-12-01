@@ -22,11 +22,14 @@ body {
   color: var(--on-background);
   font-family: Times, sans-serif;
   background-color: var(--background);
-
+  width: 100%;
 }
 
 section {
   min-height: 10vh;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +53,9 @@ h2 {
 
 /* Navigation */
 nav {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -59,7 +65,7 @@ nav {
   font-family: Oswald, sans-serif;
   letter-spacing: 0.188em;
   padding: 1.563em;
-  width: 100vw;
+  width: 100%;
   background: rgb(255 255 255 / 50%);
 }
 
@@ -134,6 +140,9 @@ a:focus {
 /* About Section */
 
 .about-container {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   width: 70%;
@@ -164,6 +173,12 @@ a:focus {
 
 #about p {
   color: var(--on-background-alt);
+}
+
+@media screen and (max-width: 599px) {
+  .team-desc p { 
+    font: 1.5rem;
+  }
 }
 
 .complete{
@@ -403,6 +418,9 @@ p {
 
 .footer .footer-content {
   height: 21.875em;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -426,6 +444,9 @@ ul.links--list {
 }
 
 .ul--list {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -476,6 +497,9 @@ a[href^=tel]{
 .contact-footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
@@ -498,6 +522,9 @@ a[href^=tel]{
 }
 
 form {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction: column;
 }
