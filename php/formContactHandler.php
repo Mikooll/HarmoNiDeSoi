@@ -23,27 +23,27 @@
             $array["nameError"] = "Le nom n'a pas été spécifié";
             $array["isSuccess"] = false;
         } else {
-            $emailText .= "Name: {$array['name']}\n";
+            $emailText .= "Nom et prenom : {$array['name']}\r\n";
         }
 
         if(empty($array["city"])){
             $array["cityError"] = "La ville n'a pas été spécifiée";
             $array["isSuccess"] = false;
         } else {
-            $emailText .= "City: {$array['city']}\n";
+            $emailText .= "Ville : {$array['city']}\r\n";
         }
         if(!isEmail($array["email"])){
             $array["emailError"] = "Il ne s'agit pas d'un email correct";
             $array["isSuccess"] = false;
         } else {
-            $emailText .= "Email: {$array['email']}\n";
+            $emailText .= "Email : {$array['email']}\r\n";
         }
 
         if(empty($array["message"])){
             $array["messageError"] = "Oups ! Le champ du message est vide";
             $array["isSuccess"] = false;
         } else {
-            $emailText .= "Message: {$array['message']}\n";
+            $emailText .= "Message : {$array['message']}\r\n";
         }
 
 
