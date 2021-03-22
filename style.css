@@ -159,6 +159,22 @@ a:focus {
   }
 }
 
+@media(max-width: 700px) {
+  .about-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-container img {
+    margin: auto;
+  }
+
+  .home--logo {
+    width: 75%;
+  }
+}
+
 .about--title {
   margin-top: 0.313em;
 }
@@ -204,7 +220,6 @@ a:focus {
   border-radius: 0.625em;
   cursor: pointer;
   font-weight: 700;
-  margin-left: 20rem;
 }
 
 .reduce {
@@ -215,6 +230,7 @@ a:focus {
 .buttons {
   margin-top: 0.938em;
   margin-bottom: 0.625em;
+  text-align: center;
 }
 
 button {
@@ -243,6 +259,9 @@ button:hover:not(.outline) {
 
 .outline {
   border: 2px solid var(--primary-color);
+  background: var(--background);
+  color: black;
+  margin: 1rem;
 }
 
 .secondary,
@@ -252,13 +271,7 @@ button:hover:not(.outline) {
   color: var(--on-primary);
 }
 
-.outline {
-  background: var(--background);
-  color: black;
-}
-
 .philosophie--description .outline {
-  width: 27em;
   color: black;
 }
 
@@ -284,17 +297,16 @@ p {
   line-height: 1.563em;
 }
 
-#philosophie img {
-  width: 31.250em;
-  height: 18.750em;
-}
 
 .philosophie--description {
-  display: flex;
+  display: flow-root;
   text-align: center;
-  max-width: 100%;
+
 }
 
+img.philosophie--img {
+  width: 100%;
+}
 
 .philo-paragraph {
   width: 60%;
@@ -444,7 +456,7 @@ p {
   padding: 1.563em;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
 
   .footer {
     height: 80em;
