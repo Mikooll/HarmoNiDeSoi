@@ -644,6 +644,14 @@ textarea {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.patenaires {
+  list-style: none;
+}
+
+.patenaires a {
+  color: var(--on-primary);
+}
+
 @media(max-width: 642px) {
   .flip-box,
   .img-flip-stage{
