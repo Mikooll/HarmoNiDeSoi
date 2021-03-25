@@ -201,18 +201,25 @@ a:focus {
   color: var(--on-background-alt);
 }
 
+.team-desc {
+  margin: 2rem;
+}
+
 @media screen and (max-width: 599px) {
   .team-desc p {
     font: 1.5rem;
   }
 }
 
-.complete {
+.complete,
+.completeA {
   display: none;
 }
 
 .more,
-.reduce {
+.reduce,
+.moreA,
+.reduceA {
   background: var(--primary-color);
   color: white;
   padding: 1rem;
@@ -222,7 +229,8 @@ a:focus {
   font-weight: 700;
 }
 
-.reduce {
+.reduce,
+.reduceA {
   margin-top: 2rem;
 }
 
@@ -302,10 +310,6 @@ p {
   display: flow-root;
   text-align: center;
 
-}
-
-img.philosophie--img {
-  width: 100%;
 }
 
 .philo-paragraph {
@@ -474,6 +478,7 @@ img.philosophie--img {
     text-align: center;
   }
 
+
   .socials {
     text-align: center;
   }
@@ -495,6 +500,10 @@ img.philosophie--img {
   max-width: 100%;
 }
 
+.links__title {
+  text-align: center;
+}
+
 ul.links--list {
   padding-top: 0;
 }
@@ -513,7 +522,6 @@ ul.links--list {
 
 .ul--list {
   display: flex;
-  justify-content: center;
 }
 
 .footer-content h2 {
