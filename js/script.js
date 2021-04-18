@@ -1,30 +1,56 @@
-var show = document.querySelector(".more");
-var showA = document.querySelector(".moreA");
-var complete = document.querySelectorAll(".complete");
-var reduce = document.querySelector(".reduce");
-var completeA = document.querySelectorAll(".completeA");
-var reduceA = document.querySelector(".reduceA");
+function showAndReduce(name, total) {
+  var complete = document.querySelectorAll(".complete" + name);
+  var show = document.querySelector(".more" + name);
+  var reduce = document.querySelector(".reduce" + name);
 
-function showFull() {
-  complete.forEach((element) => (element.style.display = "inline"));
-  reduce.style.display = "inline";
-  show.style.display = "none";
+  if (total) {
+    complete.forEach((element) => (element.style.display = "inline"));
+    reduce.style.display = "inline";
+    show.style.display = "none";
+  } else {
+    complete.forEach((element) => (element.style.display = "none"));
+    reduce.style.display = "none";
+    show.style.display = "inline";
+  }
 }
 
-function showFullAurelie() {
-  completeA.forEach((element) => (element.style.display = "inline"));
-  reduceA.style.display = "inline";
-  showA.style.display = "none";
+function aurelie(total) {
+  if(total) {
+    showAndReduce('Aurelie', true);
+  } else {
+    showAndReduce('Aurelie', false);
+  }
 }
 
-function reduceText() {
-  complete.forEach((element) => (element.style.display = "none"));
-  reduce.style.display = "none";
-  show.style.display = "inline";
+function charlene(total) {
+  if(total) {
+    showAndReduce('Charlene', true);
+  } else {
+    showAndReduce('Charlene', false);
+  }
 }
 
-function reduceTextAurelie() {
-  completeA.forEach((element) => (element.style.display = "none"));
-  reduceA.style.display = "none";
-  showA.style.display = "inline";
+function cynthia(total) {
+  if(total) {
+    showAndReduce('Cynthia', true);
+  } else {
+    showAndReduce('Cynthia', false);
+  }
 }
+
+function melanie(total) {
+  if(total) {
+    showAndReduce('Melanie', true);
+  } else {
+    showAndReduce('Melanie', false);
+  }
+}
+
+function emeline(total) {
+  if(total) {
+    showAndReduce('Emeline', true);
+  } else {
+    showAndReduce('Emeline', false);
+  }
+}
+
