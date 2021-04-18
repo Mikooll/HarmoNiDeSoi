@@ -327,6 +327,7 @@ p {
   width: 60%;
   padding-top: 1.5rem;
   color: black;
+  margin-bottom: 4rem;
 }
 
 .desc {
@@ -450,7 +451,7 @@ p {
   color: white;
   height: 50em;
   position: relative;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
 }
 
 .logo-text {
