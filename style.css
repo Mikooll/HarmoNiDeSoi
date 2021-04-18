@@ -223,6 +223,10 @@ a:focus {
   display: none;
 }
 
+.list-bio {
+  color: #808486;
+}
+
 .more,
 .reduce,
 .moreA,
