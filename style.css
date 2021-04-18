@@ -492,7 +492,7 @@ p {
   }
 
   .contact--signs {
-    margin: 1rem 0 1.5rem 35% ;
+    margin: 1rem 0 1.5rem 35%;
   }
 }
 
@@ -522,6 +522,12 @@ ul.links--list {
 
 .ul--list {
   display: flex;
+}
+
+@media(max-width: 1024px) {
+  .ul--list {
+    justify-content: center;
+  }
 }
 
 .footer-content h2 {
@@ -571,7 +577,6 @@ a[href^=tel] {
   display: flex;
   flex-direction: column;
 }
-
 
 .about .fa-facebook,
 .about .fa-instagram {
@@ -656,13 +661,24 @@ textarea {
   list-style: none;
 }
 
+@media(max-width: 1024px) {
+  .patenaires {
+    text-align: center;
+  }
+}
+
 .patenaires a {
   color: var(--on-primary);
 }
 
+.patenaires li {
+  margin: 2rem 0;
+}
+
 @media(max-width: 642px) {
+
   .flip-box,
-  .img-flip-stage{
+  .img-flip-stage {
     width: 90%;
   }
 
