@@ -457,7 +457,7 @@ p {
 
 .footer .footer-content .footer-section {
   flex: 1;
-  padding: 1.563em;
+  margin: 1.563em;
 }
 
 @media(max-width: 1024px) {
