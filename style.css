@@ -38,7 +38,7 @@ section {
 
 h1 {
   font-family: Kaushan Script, sans-serif;
-  font-size: 6.250em;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
   color: var(--primary-color);
@@ -159,6 +159,12 @@ a:focus {
   }
 }
 
+@media (max-width: 918px) {
+  .home--logo {
+    margin-top: 6rem;
+  }
+}
+
 @media(max-width: 700px) {
   .about-container {
     margin: auto;
@@ -172,6 +178,7 @@ a:focus {
 
   .home--logo {
     width: 75%;
+    margin-top: 10rem;
   }
 }
 
@@ -687,7 +694,7 @@ textarea {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
   .nav {
