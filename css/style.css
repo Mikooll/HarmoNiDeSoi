@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
 
+
+.test {
+  list-style: none;
+  display: none;
+}
+
+.submenu:hover ul{
+  display: inline;
+}
+
 :root {
   --primary-color: #27aae2;
   --primary-variant: #ff2d2d;
@@ -80,7 +90,7 @@ nav {
 .nav--icon {
   text-align: center;
   margin-right: 1rem;
-  width: 8%;
+
 }
 
 .nav--icon .fab {
@@ -88,9 +98,13 @@ nav {
   margin-right: 0.625em;
 }
 
+.nav--icon:hover .fab {
+  color: white;
+}
+
 .nav--icon .fab:hover,
 .nav--icon .fab:focus {
-  color: var(--on-background);
+  color: white;
 }
 
 
@@ -150,6 +164,10 @@ a:focus {
   display: flex;
   align-items: center;
   width: 70%;
+}
+
+.title-team {
+  margin: auto;
 }
 
 @media(max-width: 1440px) {
@@ -235,6 +253,7 @@ a:focus {
   border-radius: 0.625em;
   cursor: pointer;
   font-weight: 700;
+  margin-bottom: 2rem;
 }
 
 .reduce{
@@ -439,6 +458,12 @@ p {
 /* Témoignages */
 #temoignages h1 {
   margin-top: 5rem;
+}
+
+/* FAQ */
+.faq__questions div{
+  margin-bottom: 2rem;
+  color: black;
 }
 
 /* Footer */

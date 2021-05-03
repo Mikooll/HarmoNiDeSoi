@@ -4,13 +4,13 @@ function showAndReduce(name, total) {
   var reduce = document.querySelector(".reduce" + name);
 
   if (total) {
-    complete.forEach((element) => (element.style.display = "inline"));
-    reduce.style.display = "inline";
+    complete.forEach((element) => (element.style.display = "block"));
+    reduce.style.display = "block";
     show.style.display = "none";
   } else {
     complete.forEach((element) => (element.style.display = "none"));
     reduce.style.display = "none";
-    show.style.display = "inline";
+    show.style.display = "block";
   }
 }
 
@@ -54,3 +54,12 @@ function emeline(total) {
   }
 }
 
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

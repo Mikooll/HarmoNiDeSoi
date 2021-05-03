@@ -10,7 +10,8 @@
     <link rel="icon" type="image/png" href="assets/img/Logo Figutratif.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/ajax.js"></script>
@@ -35,45 +36,46 @@
 
 <body>
     <!-- Navigation -->
-    <nav id="nav">
-        <div class="nav--text">
-            <a href="#home">Accueil</a>
-            <a href="#about">L'équipe</a>
-            <a href="#philosophie">Notre philosophie</a>
-            <a href="#stage">Stage</a>
-            <!-- <a href="boutique.html">Boutique</a> -->
-            <!-- <a href="#reportage">Album</a> -->
-            <!-- <a href="#temoignages">Avis</a> -->
-            <a href="#contact">Contact</a>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Accueil</a>
+        <a href="#philosophie">Notre Philosophie</a>
+        <div class="dropdown">
+            <button class="dropbtn">Stages<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./pages/stages.html#eclipse">Stage Eclipse</a>
+                <a href="./pages/stages.html#nouvelle-lune">Stage Nouvelle Lune</a>
+                <a href="./pages/stages.html#pleine-lune">Stage Pleine Lune </a>
+            </div>
         </div>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         <div class="nav--icon">
             <!-- <i class="fab fa-facebook"></i> -->
             <a href="https://www.instagram.com/harmonidesoi/"><i class="fab fa-instagram"></i></a>
         </div>
-    </nav>
+    </div>
+
     <!-- Home Section -->
     <section id="home">
         <div id="logo">
             <img class="home--logo" src="assets/img/Logo-removebg-preview.png" alt="Logo HarmoNideSoi" />
         </div>
         <div class="title-group">
-            <h1>HarmoNideSoi, ton coach bien-être</h1>
+            <h1>HarmoNideSoi, ton programme bien-être</h1>
             <p class="home--presentation">
-                Tu as envie de <span class="home--important">changement</span> dans ta
-                vie, d’une <span class="home--important">nouvelle dynamique</span>,
-                mais tu ne sais pas par où commencer, ni comment t’y prendre ?
+                Tu as envie d'être <span class="home--important">guidée</span> dans tes
+                habitudes, de <span class="home--important">changer ton hygiène de vie</span> et <span
+                    class="home--important">de prendre du temps pour toi ?</span><br>
+                Alors rejoins-nous vite et rencontres toute <a class="title-team" href="#about">l'équipe de
+                    professionnelles</a> en
+                participant au Stage de 12 semaines avec d'autre filles.
                 <br /><br />
 
-                Prends du temps pour toi et rejoins les stages HarmoNideSoi!<br />
-                Au programme, du sport en groupe, des conseils de professionnelles en nutrition et développement
-                personnel
+                Plus d'informations dans la <a href="#faq">FAQ</a>
                 <br />
                 Pour plus de détails sur le programme <a href="#stage">clique ici</a><br><br>
-
-                Alors si tu lis ces quelques lignes jusqu’au bout et que
-                <span class="home--important">tu sens au fond de toi</span> que c’est
-                le <span class="home--important">bon moment</span>, alors
-                <span class="home--important">écoute toi</span> et fonce !<br /><br />
 
                 Toute l'équipe sera ravie de t’écouter et de t’accompagner pour cette
                 nouvelle aventure.
@@ -90,22 +92,24 @@
             <div class="team-desc" style="margin-left: 2rem;">
                 <h3>Charlène Di Paola – Coach Sportif</h3>
                 <p class="teaser">
-                    Coach Sportif depuis 2011, j'aime accompagner et voir les personnes
-                    s'épanouir et atteindre leur objectifs.
+                    Bonjour les filles ! Je suis coach sportif depuis 2011 et passionnés de sport et de développement
+                    personnel. Et toi, qui me lie, as-tu une passion ? Des rêves que tu souhaiterai voir se réaliser ?
+                    Parles-moi de toi ! J'ai hâte de connaître tes besoins, tes objectifs et de partager avec toi Ma
+                    potion magique qui contribue à mon bien être !
                 </p>
                 <br />
-                <p class="teaser">
-                    Ma potion magique pour ma dose de bien être est composé de
-                    <ul class="list-bio">
-                        <li>Prêter attention à ce que je dispose dans mon assiette : la qualité et manger sans prise de
-                            tête,</li>
-                        <li>Avoir une activité physique qui me plaît et adaptée,</li>
-                        <li>Faire quotidiennement une introspection, observer et être attentive aux expériences que je
-                            vie,</li>
-                        <li>Ecrire ce que je ressens, ce que j´observe et mes questionnements. Cela me permet de me
-                            libérer et de prendre du recul.</li>
-                    </ul>
+                <p class="complete completeCharlene">
+                    Ma potion magique pour ma dose de bien être est composé de : <br>
                 </p>
+                <ul class="list-bio complete completeCharlene">
+                    <li>Prêter attention à ce que je dispose dans mon assiette : la qualité et manger sans prise de
+                        tête,</li>
+                    <li>Avoir une activité physique qui me plaît et adaptée,</li>
+                    <li>Faire quotidiennement une introspection, observer et être attentive aux expériences que je
+                        vie,</li>
+                    <li>Ecrire ce que je ressens, ce que j´observe et mes questionnements. Cela me permet de me
+                        libérer et de prendre du recul.</li>
+                </ul>
                 <p class="complete completeCharlene">
                     J'ai également incorporé ponctuellement dans ma potion magique : L'ostéopathie avec la "Méthode
                     POYET",
@@ -120,7 +124,7 @@
                 <br />
             </div>
         </div>
-        <span class="more moreCharlene" onclick="charlene(true)">En savoir plus...</span>
+        <span class="more moreCharlene" onclick="charlene(true)">En savoir plus sur Ma potion magique.</span>
         <span class="reduce reduceCharlene" style="display: none;" onclick="charlene(false)">Réduire...</span>
 
         <div class="about-container">
@@ -178,14 +182,14 @@
                     laissées sur le bas côté car différentes de la « norme». J’ai alors
                     tendu la main et fait un saut au cœur de l’autisme, et des personnes
                     hors du temps portées par des psychoses.<br />
-                </p>
+                </p><br>
                 <p class="complete completeMelanie">
                     J’ai entamé mon voyage spirituel grâce à la maladie de lyme qui a
                     élu domicile dans toutes mes cellules. Elle m’a guidée sur les
                     traces du chamanisme, de l’Ayurveda, de la relation d’aide, de ce
                     voyage entre le monde des vivants et le monde des morts.
                 </p>
-                <br />
+                <br /><br>
                 <p class="complete completeMelanie">
                     Ma petite voix intérieure me souffle de continuer de traverser les
                     couches de mon Être, afin de tracer le passage pour l’autre.
@@ -196,7 +200,7 @@
                     ressentent le besoin de se libérer de tout ce qui les enchaînes afin
                     de renaitre dans l’espace sacré de leur âme et Être au monde.
                 </p>
-                <br />
+                <br /><br>
                 <p class="complete completeMelanie">
                     Comment cela se déroule ? Guidée par mon cœur et ce que la personne
                     m’autorise à connecter, avec rigueur et présence, j’accompagne par
@@ -217,9 +221,9 @@
         <span class="reduce reduceMelanie" style="display: none;" onclick="melanie(false)">Réduire...</span>
 
         <div class="about-container">
-            <img src="assets/img/Lea.jpg" alt="Kinésithérapeute" id="image3" />
+            <img src="assets/img/Lea.jpg" alt="recettes healthy" id="image3" />
             <div class="team-desc" style="margin-left: 2rem;">
-                <h3>Léa JUIN - Partenaire</h3>
+                <h3>Léa JUIN - Créatrice de recettes Healthy</h3>
                 <p>
                     Je suis Léa, mon intérêt pour la cause animale et ma pratique du
                     sport m'ont conduite à me documenter sur l'alimentation et par la
@@ -237,9 +241,9 @@
         </div>
 
         <div class="about-container">
-            <img src="assets/img/Emeline.jpg" alt="Diététicienne" id="image4" />
+            <img src="assets/img/Emeline.jpg" alt="Diététicienne - Nutritionniste" id="image4" />
             <div class="team-desc" style="margin-left: 2rem;">
-                <h3>Émeline Bacot - Diététicienne</h3>
+                <h3>Émeline Bacot - Diététicienne - Nutritionniste</h3>
                 <p class="teaser">
                     Diététicienne-nutritionniste en libéral, je consulte à domicile
                     (Herblay-sur-Seine et alentours) et à distance. Je suis notamment
@@ -256,6 +260,7 @@
                     se faire plaisir. Pas de restriction ni de frustration avec moi !
                 </p>
                 <br />
+                <br>
                 <p class="complete completeEmeline">
                     J’anime également des ateliers cuisine (en présentiel et en visio).
                     Je créé mes recettes et anime avec passion chaque atelier en faisant
@@ -300,7 +305,7 @@
                     être totalement zéro déchet. Son enfant est né, nous sommes le 1er
                     janvier 2014, l'aventure commence...
                 </p>
-                <br />
+                <br /><br>
                 <p class="complete completeAurelie">
                     Après quatre années de recherches et de formation, elle concrétise
                     sa vision et parvient à formuler des cosmétiques à haute qualité
@@ -312,7 +317,7 @@
                     conçues sur-mesure et remplissent en tout 20 utilisations... en mode
                     zéro déchet bien-sur !
                 </p>
-                <br />
+                <br /><br>
                 <p class="complete completeAurelie">
                     En un an et demi, Aurélie a déjà formé 270 femmes à l'autonomie
                     cosmétique et poursuit l'aventure en donnant 2 ateliers
@@ -321,9 +326,9 @@
                 </p>
                 <br />
             </div>
-            <span class="more moreAurelie" onclick="aurelie(true)">En savoir plus...</span>
-            <span class="reduce reduceAurelie" style="display: none;" onclick="aurelie(false)">Réduire...</span>
         </div>
+        <span class="more moreAurelie" onclick="aurelie(true)">En savoir plus...</span>
+        <span class="reduce reduceAurelie" style="display: none;" onclick="aurelie(false)">Réduire...</span>
     </section>
 
     <!-- Philo Section -->
@@ -331,35 +336,16 @@
         <h2>Notre Philosophie</h2>
         <img class="philosophie--img" src="assets/img/photo-1544216717-3bbf52512659.jpg" alt="philosophie" />
         <div class="buttons">
-            <button class="outline">Prévention et sport santé</button>
+            <button class="outline">Prévention et Sport Santé</button>
             <button class="outline">Conseils en nutrition</button>
             <button class="outline">Écoute et bienveillance</button>
+        </div>
+        <div class="buttons">
             <button class="outline">Développement personnel</button>
             <button class="outline">Coaching adapté pour toutes</button>
             <button class="outline">Équipe de professionnelles</button>
         </div>
 
-        <h3 style="text-align: center; color: black;">On s'engage à :</h3>
-        <div class="philosophie--description">
-            <button class="outline">Ecouter vos besoins et y répondre</button>
-
-            <button class="outline">
-                Vous accompagner pour à atteindre vos objectifs
-            </button>
-
-            <button class="outline">
-                Vous initier aux techniques en développement personnel
-            </button>
-        </div>
-
-        <p class="philo-paragraph">
-            Cette belle formule, sera agrémentée par des professionnels ayant chacun
-            leur spécialité, et qui mettront leurs savoirs, compétences et
-            expériences pour vous accompagner au mieux dans cette quête de sérénité.
-            <br /><br />
-            Au programme, 12 semaines de sport, de conseils, d’outils à
-            expérimenter, du partage avec une communauté.
-        </p>
     </section>
 
     <!-- Stages Section -->
@@ -368,17 +354,9 @@
         <div class="flip-box">
             <div class="flip-box-inner">
                 <div class="card flip-box-front">
-                    <img class="img-flip-stage" src="assets/img/photo-stage.jpg" alt="Photo stage" />
+                    <img class="" src="assets/img/plaquette.pdf" alt="Photo stage" />
                 </div>
-
-                <div class="flip-box-back">
-                    <img class="img-flip-stage" src="assets/img/stage-back.jpg" alt="Photo stage" />
-                </div>
-            </div> -->
-    <!-- <div class="price">
-                <p>Je m'inscris</p>
-            </div> -->
-    <!-- </div>
+            </div>
     </section> -->
 
     <!-- Témoignages Section -->
@@ -389,6 +367,32 @@
     </section> -->
 
     <!-- Comment Section -->
+    <section id="faq">
+        <h2>Foire aux questions</h2>
+        <div class="faq__questions">
+            <div>
+                <h3>Où se déroule le stage ?</h3>
+                <p>Pour la pratique sportive, en extérieur et en présentiel, dans le val d'Oise au alentours de
+                    Cergy-Pontoise.</p>
+                <p>Les Ateliers en distanciel.</p>
+            </div>
+            <div>
+                <h3>Comment démarre le stage</h3>
+                <p>Étape 1 : Un questionnaire Bilan Forme pour faire connaissance est à compléter.</p>
+                <p>Étape 2 : Une visio pour faire connaissance avec toute l’équipe et les participantes du stage.</p>
+                <p>Étape 3 : 1 séance tests sportifs et initiation aux mouvements fondamentaux.</p>
+            </div>
+            <div>
+                <h3>Comment se déroule la programmation sportive ?</h3>
+                <p>Une séance en presentiel et en groupe 1 fois par semaine et ma programmation à faire en autonomie.
+                </p>
+            </div>
+            <div>
+                <h3>Nous sommes combien de participante par stage ?</h3>
+                <p>10 personnes maximum</p>
+            </div>
+        </div>
+    </section>
 
     <footer id="contact">
         <!-- FOOTER START -->
@@ -428,12 +432,12 @@
                             </a>
                         </ul>
                         <ul class="links--list">
-                            <a href="#stage">
-                                <li>Stage</li>
+                            <a href="./pages/stages.html">
+                                <li>Stages</li>
                             </a>
-                            <!-- <a href="boutique.html">
-                                <li>Boutique</li>
-                            </a> -->
+                            <a href="#faq">
+                                <li>FAQ</li>
+                            </a>
                             <!-- <a href="#temoignages">
                                 <li>Témoignages</li>
                             </a> -->

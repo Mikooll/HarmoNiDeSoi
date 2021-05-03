@@ -1,0 +1,188 @@
+:root {
+    --primary-color: #27aae2;
+    --primary-variant: #ff2d2d;
+    --secondary-color: #1b9999;
+    --on-primary: rgb(250, 250, 250);
+    --on-background: #02a79d;
+    --on-background-opacity: rgba(2, 167, 157, 0.5);
+    --on-background-alt: rgba(66, 66, 66, 0.7);
+    --background: rgb(238, 248, 255);
+    --box-shadow: 0 0.313em 1.25em 0.063em rgba(0, 0, 0, 0.5);
+}
+
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+    font-size: 1.5em;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0.188em;
+    padding: 1.563em;
+    width: 100%;
+    background: rgb(255 255 255 / 50%);
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0.188em;
+    font-size: 1.5rem;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: var(--on-background);
+    color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: var(--on-background);
+    width: 100%;
+    z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: var(--primary-color);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+    font-size: 1.5em;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0.188em;
+    padding: 1rem;
+    width: 100%;
+    background: rgb(255 255 255 / 50%);
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--primary-color);;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    z-index: 10;
+    color: var(--primary-color);
+    letter-spacing: 0.188em;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--on-background);
+    z-index: 10;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    z-index: 10;
+    display: block;
+    text-align: left;
+    border-radius: .5rem;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 1rem;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
