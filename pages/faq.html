@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>HarmoNideSoi</title>
     <meta name="description"
         content="HarmoNidesoi vous propose de faire du sport en groupe et dans la bonne humeur, de bousculer vos habitudes en découvrant auprès de professionnels des méthodes et conseils pour se sentir bien durablement !" />
     <link rel="icon" type="image/png" href="assets/img/Logo Figutratif.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
 
-    <link rel="stylesheet" href="../css/stages.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/nav.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/ajax.js"></script>
 
     <!-- Balises meta Facebook -->
     <meta property="og:url" content="http://harmonidesoi.fr/" />
@@ -31,33 +33,73 @@
     <meta name="twitter:title" content="Harmonidesoi" />
     <meta name="twitter:image" content="assets/Logo.jpg" />
 </head>
+
 <body>
-    <!-- Navigation -->
-    <div class="topnav" id="myTopnav">
+     <!-- Navigation -->
+     <div class="topnav" id="myTopnav">
         <a href="../index.html#home" class="active">Accueil</a>
-        <a href="../index.html#philosophie">Notre Philosophie</a>
+        <a href="#philosophie">Notre Philosophie</a>
         <div class="dropdown">
             <button class="dropbtn">Stages<i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#eclipse">Stage Eclipse</a>
-                <a href="#nouvelle-lune">Stage Nouvelle Lune</a>
-                <a href="#pleine-lune">Stage Pleine Lune </a>
+                <a href="./pages/stages.html#eclipse">Stage Eclipse</a>
+                <a href="./pages/stages.html#nouvelle-lune">Stage Nouvelle Lune</a>
+                <a href="./pages/stages.html#pleine-lune">Stage Pleine Lune </a>
             </div>
         </div>
-        <a href="../index.html#contact">Contact</a>
-        <a href="../index.html#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         <div class="nav--icon">
             <!-- <i class="fab fa-facebook"></i> -->
             <a href="https://www.instagram.com/harmonidesoi/"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-    <div class="stages-images">
-        <img id="eclipse" src="../assets/img/3.png" alt="">
-        <img id="nouvelle-lune" src="../assets/img/4.png" alt="">
-        <img id="pleine-lune" src="../assets/img/5.png" alt="">
-    </div>
+    <!-- Comment Section -->
+    <section id="faq">
+        <h2>Foire aux questions</h2>
+        <div class="faq__questions">
+            <div>
+                <h3>Où se déroule le stage ?</h3>
+                <p>Pour la pratique sportive, en extérieur et en présentiel, dans le val d'Oise au alentours de
+                    Cergy-Pontoise.</p>
+                <p>Les Ateliers se déroulent en distanciel.</p>
+            </div>
+            <div>
+                <h3>Comment démarre le stage ?</h3>
+                <p>Étape 1 : Pour faire connaissance, un questionnaire Bilan Forme est à compléter.</p>
+                <p>Étape 2 : Une visio pour faire connaissance avec toute l’équipe et les participantes du stage.</p>
+                <p>Étape 3 : 1 séance tests sportifs et initiation aux mouvements fondamentaux.</p>
+            </div>
+            <div>
+                <h3>Comment se déroule la programmation sportive ?</h3>
+                <p>Tu auras une séance de sport en presentiel et en groupe une fois par semaine.</p>
+                <p>Et en complément ton programme à faire chez toi en autonomie.</p>
+            </div>
+            <div>
+                <h3>Nous sommes combien de participantes par stage ?</h3>
+                <p>10 personnes maximum.</p>
+            </div>
+            <div>
+                <h3>Quelles sont les modalités de paiement pour participer au stage ?</h3>
+                <p>Paiement par chèque ou espèces.</p>
+            </div>
+            <div>
+                <h3>Comment puis-je m'inscrire pour participer au stage ?</h3>
+                <p>En nous contactant via <a href="#contact-form">le formulaire.</a></p>
+            </div>
+            <div>
+                <h3>Puis-je intégrer le stage en cours de route ?</h3>
+                <p>Afin de préserver la dynamique du groupe et de bénéficier de tous les enseignements, il est essentiel de le démarrer dès le début.</p>
+            </div>
+            <div>
+                <h3>Quelles sont les prochaines de stage ?</h3>
+                <p>Inscrivez-vous à la newsletter pour ne rater aucun évènement ou de vous abonner à la page instagram</p>
+            </div>
+        </div>
+    </section>
+
     <footer id="contact">
         <!-- FOOTER START -->
         <div class="footer">
@@ -99,7 +141,7 @@
                             <a href="./pages/stages.html">
                                 <li>Stages</li>
                             </a>
-                            <a href="#faq">
+                            <a href="">
                                 <li>FAQ</li>
                             </a>
                             <!-- <a href="#temoignages">
@@ -122,7 +164,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-section contact-form">
+                <div class="footer-section contact-form" id="contact-form">
                     <h3>Nous contacter</h3>
                     <br />
                     <form id="contact-form" class="form-input" action="" method="post">
@@ -153,4 +195,5 @@
         <!-- END OF FOOTER -->
     </footer>
 </body>
+
 </html>

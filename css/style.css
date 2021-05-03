@@ -46,7 +46,7 @@ section {
   flex-direction: column;
 }
 
-h1 {
+h1, h2 {
   font-family: Kaushan Script, sans-serif;
   font-size: 3rem;
   margin-bottom: 1.5rem;
@@ -54,13 +54,11 @@ h1 {
   color: var(--primary-color);
 }
 
-h2 {
-  font-family: Oswald, sans-serif;
-  color: var(--on-background-alt);
-  font-size: 2em;
-  font-weight: normal;
+h3 {
+  margin: 2em 2em 1rem 0;
+ 
+  font-size: 1.5rem
 }
-
 /* Navigation */
 nav {
   display: flex;
@@ -227,7 +225,8 @@ a:focus {
 }
 
 .team-desc {
-  margin: 2rem;
+  margin: 2rem 2rem 0 2rem;
+  
 }
 
 @media screen and (max-width: 599px) {
@@ -461,6 +460,11 @@ p {
 }
 
 /* FAQ */
+
+#faq h2 {
+  margin-top: 8rem;
+}
+
 .faq__questions div{
   margin-bottom: 2rem;
   color: black;
@@ -493,6 +497,16 @@ p {
   margin: 1.563em;
 }
 
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__text {
+  margin-right: 1.5rem;
+  font-size: 1.2rem;
+}
+
 @media(max-width: 1024px) {
 
   .footer {
@@ -511,9 +525,10 @@ p {
     text-align: center;
   }
 
-
   .socials {
     text-align: center;
+    display: flex;
+    align-items: center;
   }
 
   .contact-form h3 {
@@ -684,6 +699,7 @@ form {
 
 .footer-desc {
   font-style: italic;
+  font-size: 1.3rem;
 }
 
 textarea {

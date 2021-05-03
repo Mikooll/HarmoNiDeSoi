@@ -2,3 +2,12 @@
     list-style: none;
     display: none;
 }
+
+.stages-images {
+    display: flex;
+}
+
+.stages-images img {
+    width: 30%;
+    margin: 7rem auto;
+}
